@@ -1,0 +1,7 @@
+strings = ["WELCOME", "TO", "MCA", "STUDENTS", "MCA", "IS", "PROFESSIONAL", "COURSE.", "MCA", "STUDENTS", "ARE", "DOING", "GOOD"]
+
+strings.sort(key = len)
+
+res = [i for n, i in enumerate(strings) if i not in strings[:n]]
+
+print (str(res))
